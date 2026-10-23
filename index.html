@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Blog — a personal blog about design, technology, and creative work.">
+  <title>The Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="The Blog home">Your Name</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+        <a href="#recent">Blog</a>
+        <a href="#about">About</a>
+        <a href="#newsletter">Newsletter</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <h1>THE BLOG</h1>
+    </section>
+
+    <section class="container content-section" id="recent" aria-labelledby="recent-title">
+      <div class="section-heading">
+        <h2 id="recent-title">Recent blog posts</h2>
+      </div>
+      <div class="recent-layout">
+        <article class="featured-post">
+          <a class="image-link" href="#">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Bright modern office with desks and chairs">
+          </a>
+          <div class="post-copy">
+            <p class="post-meta">Sunday, 1 Jan 2023 · 8 min read</p>
+            <h3><a href="#">UX review presentations</a></h3>
+            <p class="excerpt">How to create a presentation that makes your design decisions easy to understand and remember.</p>
+            <div class="tags"><span>Design</span><span>Research</span><span>Presentation</span></div>
+          </div>
+        </article>
+        <div class="post-list">
+          <article class="horizontal-post">
+            <a class="thumbnail" href="#"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=520&q=85" alt="People collaborating around a table"></a>
+            <div><p class="post-meta">Sunday, 1 Jan 2023</p><h3><a href="#">Migrating to Linear 101</a></h3><p class="excerpt">A practical guide to moving your team and projects into a more focused workspace.</p><div class="tags"><span>Design</span><span>Product</span></div></div>
+          </article>
+          <article class="horizontal-post">
+            <a class="thumbnail" href="#"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=520&q=85" alt="Minimal office interior with plants"></a>
+            <div><p class="post-meta">Sunday, 1 Jan 2023</p><h3><a href="#">Building your API stack</a></h3><p class="excerpt">The tools and habits that help small teams ship reliable work faster.</p><div class="tags"><span>Design</span><span>Research</span></div></div>
+          </article>
+          <article class="horizontal-post">
+            <a class="thumbnail" href="#"><img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=520&q=85" alt="Creative design work on a desktop"></a>
+            <div><p class="post-meta">Sunday, 1 Jan 2023</p><h3><a href="#">Grid systems for better Design</a></h3><p class="excerpt">Why a flexible grid is one of the best tools for making thoughtful interfaces.</p><div class="tags"><span>Design</span><span>Interface</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container content-section all-posts" aria-labelledby="all-posts-title">
+      <div class="section-heading"><h2 id="all-posts-title">All blog posts</h2></div>
+      <div class="post-grid">
+        <article class="card"><a class="card-image" href="#"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=760&q=85" alt="Mountain landscape beneath a blue sky"></a><p class="post-meta">Sunday, 1 Jan 2023 · 7 min read</p><h3><a href="#">Bill Walsh leadership lessons</a></h3><p class="excerpt">A few lessons from a career built on clarity, consistency, and care.</p><div class="tags"><span>Leadership</span><span>Management</span></div></article>
+        <article class="card"><a class="card-image" href="#"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=760&q=85" alt="Team workshop with colorful notes"></a><p class="post-meta">Sunday, 1 Jan 2023 · 6 min read</p><h3><a href="#">PM mental models</a></h3><p class="excerpt">Simple ways to make better product decisions with your team.</p><div class="tags"><span>Product</span><span>Research</span></div></article>
+        <article class="card"><a class="card-image" href="#"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=760&q=85" alt="Laptop and notebook on a desk"></a><p class="post-meta">Sunday, 1 Jan 2023 · 5 min read</p><h3><a href="#">What is Wireframing?</a></h3><p class="excerpt">A beginner-friendly look at the first step in making a digital product.</p><div class="tags"><span>Design</span><span>Process</span></div></article>
+        <article class="card"><a class="card-image" href="#"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=760&q=85" alt="Creative team discussing a project"></a><p class="post-meta">Sunday, 1 Jan 2023 · 8 min read</p><h3><a href="#">How collaboration spaces work</a></h3><p class="excerpt">Designing an environment where good ideas can move forward.</p><div class="tags"><span>Design</span><span>Collaboration</span></div></article>
+        <article class="card"><a class="card-image" href="#"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=760&q=85" alt="Friends talking together at a table"></a><p class="post-meta">Sunday, 1 Jan 2023 · 6 min read</p><h3><a href="#">Our top 10 Javascript frameworks</a></h3><p class="excerpt">A clear comparison of the tools shaping modern front-end work.</p><div class="tags"><span>Technology</span><span>Development</span></div></article>
+        <article class="card"><a class="card-image" href="#"><img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=760&q=85" alt="Person working on a laptop in a studio"></a><p class="post-meta">Sunday, 1 Jan 2023 · 4 min read</p><h3><a href="#">Podcast: Creating a better UX Community</a></h3><p class="excerpt">Notes from a conversation about growing thoughtful design teams.</p><div class="tags"><span>Podcast</span><span>Community</span></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about"><div class="container"><p>© 2023 Your Name. All rights reserved.</p><div id="newsletter"><a href="#">Twitter</a><a href="#">LinkedIn</a><a href="#">Email</a></div></div></footer>
+</body>
+</html>
